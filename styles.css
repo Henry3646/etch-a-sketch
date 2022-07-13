@@ -1,0 +1,74 @@
+/* background color = 210d26
+   Accent color = 30d5c8 */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0;
+    gap: 15px;
+}
+.title {
+    display: flex;
+    font-size: 75px;
+    font-family: 'Roboto' , sans-serif;
+    padding: 40px;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+#color,
+#random,
+#eraser,
+#clear{
+    font-size: 24px;
+    font-family: 'Roboto' , sans-serif ;
+    width: 200px;
+    height: 50px;
+    border: 3px solid black;
+    border-radius: 5px;
+    position: relative;
+    top: 0;
+    transition: top ease 0.5s;
+}
+
+#size {
+    font-size: 24px;
+    font-family: 'Roboto', sans-serif;
+}
+#color:hover,
+#random:hover,
+#eraser:hover,
+#clear:hover {
+    top: -5px;
+}
+
+.grid {
+    display: grid;
+    height: 500px;
+    width: 500px;
+    border: 2px solid black;
+    box-shadow: rgba(0,0,0,0.25)0px 3px 8px;
+}
+
+.main {
+    display: flex;
+    flex-direction: row;
+    gap: 150px;
+}
+
+button.selected {
+    background-color: black;
+    color: white;
+}
+
+.grid-element{
+    user-select: none;
+}
+
